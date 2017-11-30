@@ -1,0 +1,9 @@
+    class Weapon
+    {
+        public string name;
+
+        public Weapon(string Name)
+        {
+        }
+            
+       
