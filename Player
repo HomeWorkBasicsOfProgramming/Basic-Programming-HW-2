@@ -1,0 +1,33 @@
+ class Player
+    {
+        bool isCover;
+        bool isHit;
+        bool isStandingCover;
+        bool isDamageable;
+        int startingHealth;
+        int currentHealth;
+        bool interactObject;
+
+        
+
+        static bool isCover ()
+        {
+            if (interactObject == true)
+            {
+            return true;
+            } else if (interactObject == false) {
+            return false;
+            }
+        }
+        
+        static bool isDamageble ()
+        {
+               if (isCover == true && isStandingCover == true)
+            return true;
+               else if (isCover == true && isStandingCover == false)
+            return false; 
+                else
+            return false;
+        }
+
+    }
